@@ -1,0 +1,31 @@
+p, a {
+  font-family: "Roboto"; }
+
+h1, h2, h3 {
+  font-family: "Shrikhand"; }
+
+body {
+  margin: 0px;
+  padding: 0px; }
+
+@media all and (max-width: 480px) {
+  header {
+    width: 100%;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 5px 0px black;
+    -moz-box-shadow: 0px 1px 5px 0px black;
+    box-shadow: 0px 1px 5px 0px black; }
+    header h1 {
+      display: inline-block; }
+    header > i {
+      display: none !important; }
+
+  div#conteneurLocalisation {
+    width: 100%;
+    background-color: #F2F2F2;
+    text-align: center;
+    padding: 10px 0px; }
+    div#conteneurLocalisation i {
+      margin-right: 10px; } }
+
+/*# sourceMappingURL=main.css.map */
