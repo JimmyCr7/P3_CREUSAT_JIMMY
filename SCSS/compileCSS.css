@@ -1,0 +1,20 @@
+p, a {
+  font-family: "Roboto"; }
+
+h1, h2, h3 {
+  font-family: "Shrikhand"; }
+
+body {
+  margin: 0px;
+  padding: 0px; }
+
+@media all and (max-width: 480px) {
+  header {
+    width: 100%;
+    text-align: center; }
+    header h1 {
+      display: inline-block; }
+    header + i.fas {
+      display: none; } }
+
+/*# sourceMappingURL=compileCSS.css.map */

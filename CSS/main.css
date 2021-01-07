@@ -26,6 +26,115 @@ body {
     text-align: center;
     padding: 10px 0px; }
     div#conteneurLocalisation i {
-      margin-right: 10px; } }
+      margin-right: 10px; }
+
+  div#conteneurReservation {
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 20px 0px; }
+    div#conteneurReservation > p:first-child {
+      font-weight: bolder; }
+    div#conteneurReservation > button {
+      background: linear-gradient(-45deg, #F100FC, #FA83FF);
+      color: white;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      border-color: transparent;
+      padding: 10px 20px;
+      -webkit-box-shadow: 0px 2px 8px 0px black;
+      -moz-box-shadow: 0px 2px 8px 0px black;
+      box-shadow: 0px 2px 8px 0px black; }
+
+  div#conteneurFonctionnement {
+    padding: 20px 0px; }
+    div#conteneurFonctionnement > h2 {
+      margin: 0px 0px 20px 20px; }
+    div#conteneurFonctionnement > div#listeActions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    div#conteneurFonctionnement button {
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      -webkit-box-shadow: 0px 2px 8px 0px black;
+      -moz-box-shadow: 0px 2px 8px 0px black;
+      box-shadow: 0px 2px 8px 0px black;
+      width: 85%;
+      margin: 0px auto;
+      margin-bottom: 20px;
+      padding: 25px 0px;
+      text-align: left; }
+      div#conteneurFonctionnement button > i {
+        margin: 0px 35px; }
+      div#conteneurFonctionnement button > span.numAction {
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        color: white;
+        width: 15px;
+        height: 15px;
+        padding: 7px;
+        background-color: #9356DC;
+        margin-left: -12px; }
+
+  div#conteneurRestaurants {
+    background-color: #F8F8F8;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    div#conteneurRestaurants > h2 {
+      margin: 0px 0px 20px 15px; }
+    div#conteneurRestaurants > div.restaurant {
+      display: flex;
+      flex-direction: column;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      -webkit-box-shadow: 0px 2px 8px 0px black;
+      -moz-box-shadow: 0px 2px 8px 0px black;
+      box-shadow: 0px 2px 8px 0px black;
+      margin: 0px 15px 25px 15px; }
+      div#conteneurRestaurants > div.restaurant img.photoRestaurant {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        -webkit-border-radius: 20px 20px 0px 0px;
+        -moz-border-radius: 20px 20px 0px 0px;
+        border-radius: 20px 20px 0px 0px; }
+    div#conteneurRestaurants div.infoRestaurant {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      div#conteneurRestaurants div.infoRestaurant > div:first-child {
+        flex: 6; }
+        div#conteneurRestaurants div.infoRestaurant > div:first-child * {
+          margin-left: 20px; }
+        div#conteneurRestaurants div.infoRestaurant > div:first-child > p:last-child {
+          margin-top: -15px; }
+      div#conteneurRestaurants div.infoRestaurant > div:last-child {
+        flex: 1; }
+
+  footer {
+    padding: 20px 0px;
+    background-color: #453F45;
+    color: white;
+    text-align: left; }
+    footer > * {
+      margin-left: 20px; }
+    footer > p {
+      font-family: "Shrikhand"; }
+    footer ul {
+      padding: 0px; }
+      footer ul > li {
+        list-style: none;
+        margin: 8px 0px; }
+    footer a {
+      text-decoration: none;
+      color: white; }
+    footer i {
+      margin-right: 8px; } }
 
 /*# sourceMappingURL=main.css.map */
