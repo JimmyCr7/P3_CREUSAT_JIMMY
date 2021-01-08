@@ -9,17 +9,21 @@ body {
   padding: 0px; }
 
 @media all and (max-width: 480px) {
-  header {
-    width: 100%;
-    text-align: center;
-    -webkit-box-shadow: 0px 1px 5px 0px black;
-    -moz-box-shadow: 0px 1px 5px 0px black;
-    box-shadow: 0px 1px 5px 0px black; }
-    header h1 {
-      display: inline-block; }
-    header > i {
-      display: none !important; }
-
+  	/*header{
+  		width: 100%;
+  		text-align: center;
+  		-webkit-box-shadow: 0px 1px 5px 0px black;
+  		-moz-box-shadow: 0px 1px 5px 0px black;
+  		box-shadow: 0px 1px 5px 0px black;
+  
+  		h1{
+  			display: inline-block;
+  		}
+  
+  		> i{
+  			display: none !important;
+  		}
+  	}*/
   div#conteneurLocalisation {
     width: 100%;
     background-color: #F2F2F2;
@@ -117,6 +121,17 @@ body {
       div#conteneurRestaurants div.infoRestaurant > div:last-child {
         flex: 1; }
 
+  header {
+    width: 100%;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 5px 0px black;
+    -moz-box-shadow: 0px 1px 5px 0px black;
+    box-shadow: 0px 1px 5px 0px black; }
+    header h1 {
+      display: inline-block; }
+    header > i {
+      display: none !important; }
+
   footer {
     padding: 20px 0px;
     background-color: #453F45;
@@ -135,6 +150,39 @@ body {
       text-decoration: none;
       color: white; }
     footer i {
-      margin-right: 8px; } }
+      margin-right: 8px; }
+
+  	/*footer{
+  		padding: 20px 0px;
+  		background-color: #453F45;
+  		color: white;
+  		text-align: left;
+  
+  		> *{
+  			margin-left: 20px;
+  		}
+  
+  		> p{
+  			font-family: $police-logo-titre;
+  		}
+  
+  		ul{
+  			padding: 0px;
+  
+  			> li{
+  				list-style: none;
+  				margin: 8px 0px;
+  			}
+  		}
+  
+  		a{
+  			text-decoration: none;
+  			color: white;
+  		}
+  
+  		i{
+  			margin-right: 8px;
+  		}
+  	}*/ }
 
 /*# sourceMappingURL=main.css.map */
