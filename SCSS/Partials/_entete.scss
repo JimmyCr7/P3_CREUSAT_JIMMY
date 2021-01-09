@@ -1,0 +1,16 @@
+// ENTETE
+	header{
+		width: 100%;
+		text-align: center;
+		-webkit-box-shadow: 0px 1px 5px 0px black;
+		-moz-box-shadow: 0px 1px 5px 0px black;
+		box-shadow: 0px 1px 5px 0px black;
+
+		h1{
+			display: inline-block;
+		}
+
+		> i{
+			display: none !important;
+		}
+	}
