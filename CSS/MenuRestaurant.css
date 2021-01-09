@@ -1,0 +1,118 @@
+p, a, span {
+  font-family: "Roboto"; }
+
+h1, h2, h3 {
+  font-family: "Shrikhand"; }
+
+body {
+  margin: 0px;
+  padding: 0px; }
+
+header {
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0px 1px 5px 0px black;
+  -moz-box-shadow: 0px 1px 5px 0px black;
+  box-shadow: 0px 1px 5px 0px black; }
+  header h1 {
+    display: inline-block; }
+  header > i {
+    display: none !important; }
+
+footer {
+  padding: 20px 0px;
+  background-color: #453F45;
+  color: white;
+  text-align: left; }
+  footer > * {
+    margin-left: 20px; }
+  footer > p {
+    font-family: "Shrikhand"; }
+  footer ul {
+    padding: 0px; }
+    footer ul > li {
+      list-style: none;
+      margin: 8px 0px; }
+  footer a {
+    text-decoration: none;
+    color: white; }
+  footer i {
+    margin-right: 8px; }
+
+hr {
+  width: 10%;
+  border: none;
+  background-color: cyan;
+  height: 3px;
+  margin: 0px; }
+
+main img {
+  object-fit: cover;
+  width: 100%;
+  height: 280px; }
+main > div {
+  padding: 25px 0px; }
+main > div:first-child {
+  padding-top: 0px; }
+
+div#conteneurMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  -webkit-border-radius: 30px 30px 0px 0px;
+  -moz-border-radius: 30px 30px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -60px;
+  position: relative;
+  z-index: 5; }
+  div#conteneurMenu > * {
+    margin: 0px 25px; }
+  div#conteneurMenu > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    div#conteneurMenu > div:first-child > i {
+      margin-top: 20px; }
+
+div.detailChoix {
+  display: flex;
+  flex-direction: column;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin: 20px 0px 20px 0px;
+  padding: 10px 0px;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07); }
+  div.detailChoix > div {
+    margin: 0px 10px; }
+  div.detailChoix > div:first-child {
+    margin-bottom: 5px; }
+    div.detailChoix > div:first-child > span {
+      font-weight: bolder; }
+  div.detailChoix > div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    div.detailChoix > div:last-child > span:last-child {
+      margin-right: 8px;
+      font-weight: bolder; }
+
+button.btn-primaire {
+  display: inline-block;
+  color: white;
+  background: linear-gradient(-45deg, #9356DC, #FF79DA);
+  padding: 15px 15px;
+  margin: 0px auto !important;
+  border: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  width: 50%;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07); }
+
+/*# sourceMappingURL=MenuRestaurant.css.map */
