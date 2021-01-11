@@ -1,4 +1,4 @@
-p, a {
+p, a, span {
   font-family: "Roboto"; }
 
 h1, h2, h3 {
@@ -9,21 +9,6 @@ body {
   padding: 0px; }
 
 @media all and (max-width: 480px) {
-  	/*header{
-  		width: 100%;
-  		text-align: center;
-  		-webkit-box-shadow: 0px 1px 5px 0px black;
-  		-moz-box-shadow: 0px 1px 5px 0px black;
-  		box-shadow: 0px 1px 5px 0px black;
-  
-  		h1{
-  			display: inline-block;
-  		}
-  
-  		> i{
-  			display: none !important;
-  		}
-  	}*/
   div#conteneurLocalisation {
     width: 100%;
     background-color: #F2F2F2;
@@ -65,14 +50,25 @@ body {
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
       border-radius: 20px;
+      border: none;
       -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
       -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
       width: 85%;
+      font-weight: bolder;
       margin: 0px auto;
       margin-bottom: 20px;
       padding: 25px 0px;
-      text-align: left; }
+      text-align: left;
+      background-color: #F8F8F8 !important;
+      -webkit-transition-property: background-color;
+      -moz-transition-property: background-color;
+      transition-property: background-color;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+      div#conteneurFonctionnement button:hover {
+        background-color: #9356DC; }
       div#conteneurFonctionnement button > i {
         margin: 0px 35px; }
       div#conteneurFonctionnement button > span.numAction {
@@ -94,7 +90,10 @@ body {
     justify-content: space-between; }
     div#conteneurRestaurants > h2 {
       margin: 0px 0px 20px 15px; }
-    div#conteneurRestaurants > div.restaurant {
+    div#conteneurRestaurants > a {
+      color: black;
+      text-decoration: none; }
+    div#conteneurRestaurants > a > div.restaurant {
       display: flex;
       flex-direction: column;
       -webkit-border-radius: 20px;
@@ -104,7 +103,20 @@ body {
       -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
       margin: 0px 15px 25px 15px; }
-      div#conteneurRestaurants > div.restaurant img.photoRestaurant {
+      div#conteneurRestaurants > a > div.restaurant > div.banniereNouveau {
+        display: inline-block;
+        padding: 7px 15px;
+        position: absolute;
+        text-align: right;
+        background-color: #99E2D0;
+        border: none;
+        color: green;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        margin-top: 4%;
+        margin-left: 67%; }
+      div#conteneurRestaurants > a > div.restaurant img.photoRestaurant {
         object-fit: cover;
         width: 100%;
         height: 180px;
@@ -123,6 +135,8 @@ body {
           margin-top: -15px; }
       div#conteneurRestaurants div.infoRestaurant > div:last-child {
         flex: 1; }
+        div#conteneurRestaurants div.infoRestaurant > div:last-child > i.fas {
+          color: #9356DC; }
 
   header {
     width: 100%;
@@ -133,7 +147,8 @@ body {
     header h1 {
       display: inline-block; }
     header > i {
-      display: none !important; }
+      color: white;
+      display: none; }
 
   footer {
     padding: 20px 0px;
@@ -153,39 +168,6 @@ body {
       text-decoration: none;
       color: white; }
     footer i {
-      margin-right: 8px; }
-
-  	/*footer{
-  		padding: 20px 0px;
-  		background-color: #453F45;
-  		color: white;
-  		text-align: left;
-  
-  		> *{
-  			margin-left: 20px;
-  		}
-  
-  		> p{
-  			font-family: $police-logo-titre;
-  		}
-  
-  		ul{
-  			padding: 0px;
-  
-  			> li{
-  				list-style: none;
-  				margin: 8px 0px;
-  			}
-  		}
-  
-  		a{
-  			text-decoration: none;
-  			color: white;
-  		}
-  
-  		i{
-  			margin-right: 8px;
-  		}
-  	}*/ }
+      margin-right: 8px; } }
 
 /*# sourceMappingURL=main.css.map */
