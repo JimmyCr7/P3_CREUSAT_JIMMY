@@ -32,8 +32,23 @@ $police-texte: 'Roboto';
 	@include ombrePrincipale;
 }
 
+@mixin banniereNouveau{
+	display: inline-block;
+	padding: 7px 15px;
+	position: absolute;
+	text-align: right;
+	background-color: $couleur-tertiaire;
+	border: none;
+	color: green;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: 4%;
+	margin-left: 67%;
+}
+
 ////////////////////////////////
-p, a{
+p, a, span{
 	font-family: $police-texte;
 }
 
@@ -49,23 +64,6 @@ body{
 
 // VERSION MOBILE /////////////
 @media all and (max-width: 480px){
-
-	// ENTETE
-	/*header{
-		width: 100%;
-		text-align: center;
-		-webkit-box-shadow: 0px 1px 5px 0px black;
-		-moz-box-shadow: 0px 1px 5px 0px black;
-		box-shadow: 0px 1px 5px 0px black;
-
-		h1{
-			display: inline-block;
-		}
-
-		> i{
-			display: none !important;
-		}
-	}*/
 
 	// LOCALISATION
 	div#conteneurLocalisation{
@@ -112,12 +110,25 @@ body{
 			-webkit-border-radius: 20px;
 			-moz-border-radius: 20px;
 			border-radius: 20px;
+			border: none;
 			@include ombrePrincipale;
 			width: 85%;
+			font-weight: bolder;
 			margin: 0px auto;
 			margin-bottom: 20px;
 			padding: 25px 0px;
 			text-align: left;
+			background-color: #F8F8F8 !important;
+			-webkit-transition-property: background-color;
+			-moz-transition-property: background-color;
+			transition-property: background-color;
+			-webkit-transition-duration: 0.3s;
+			-moz-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+
+			&:hover{
+				background-color: $couleur-primaire;
+			}
 
 			> i{
 				margin: 0px 35px;
@@ -149,7 +160,12 @@ body{
 			margin: 0px 0px 20px 15px;
 		}
 
-		> div.restaurant{
+		> a{
+			color: black;
+			text-decoration: none;
+		}
+
+		> a > div.restaurant{
 			display: flex;
 			flex-direction: column;
 			-webkit-border-radius: 20px;
@@ -157,6 +173,10 @@ body{
 			border-radius: 20px;
 			@include ombrePrincipale;
 			margin: 0px 15px 25px 15px;
+
+			> div.banniereNouveau{
+				@include banniereNouveau;
+			}
 
 			img.photoRestaurant{
 				object-fit: cover;
@@ -166,6 +186,7 @@ body{
 				-moz-border-radius: 20px 20px 0px 0px;
 				border-radius: 20px 20px 0px 0px;
 			}
+
 		}
 
 		div.infoRestaurant{
@@ -187,46 +208,16 @@ body{
 
 			> div:last-child{
 				flex: 1;
+
+				> i.fas{
+					color: $couleur-primaire;
+				}
 			}
 		}
 	}
 
 	@import "Partials/entete";
 	@import "Partials/piedDePage";
-
-	// PIED DE PAGE
-	/*footer{
-		padding: 20px 0px;
-		background-color: #453F45;
-		color: white;
-		text-align: left;
-
-		> *{
-			margin-left: 20px;
-		}
-
-		> p{
-			font-family: $police-logo-titre;
-		}
-
-		ul{
-			padding: 0px;
-
-			> li{
-				list-style: none;
-				margin: 8px 0px;
-			}
-		}
-
-		a{
-			text-decoration: none;
-			color: white;
-		}
-
-		i{
-			margin-right: 8px;
-		}
-	}*/
 }
 
 // FIN VERSION MOBILE /////////

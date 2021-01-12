@@ -146,8 +146,7 @@ body {
     box-shadow: 0px 1px 5px 0px black; }
     header h1 {
       display: inline-block; }
-    header > i {
-      color: white;
+    header > div {
       display: none; }
 
   footer {
