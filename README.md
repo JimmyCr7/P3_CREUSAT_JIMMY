@@ -6,3 +6,4 @@ Le visiteur pourra visualiser les différents restaurants sur Paris ainsi que le
 Le visiteur pourra préparer sa commande depuis le site afin de gagner du temps.
 
 Lien du site sur Github Pages : 
+https://jimmycr7.github.io/P3_CREUSAT_JIMMY/
