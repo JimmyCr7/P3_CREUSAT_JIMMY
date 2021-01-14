@@ -52,7 +52,7 @@ button:not(.btn-primary) {
 header {
   text-align: left; }
   header > h1 {
-    margin-left: 35px; }
+    margin-left: 25px; }
   header > div {
     display: inline-block;
     margin: 0px 25px; }
