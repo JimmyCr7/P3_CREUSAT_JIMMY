@@ -6,4 +6,4 @@ Le projet numéro 3 consiste à créer un site statique qui s'adapte au Mobile e
 Le visiteur pourra visualiser les différents restaurants sur Paris ainsi que leur menu.
 Le visiteur pourra préparer sa commande depuis le site afin de gagner du temps.
 
-Lien du site sur Github Pages : 
+Lien du site sur Github Pages : https://jimmycr7.github.io/P3_CREUSAT_JIMMY/
