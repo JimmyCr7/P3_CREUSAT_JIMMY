@@ -179,7 +179,7 @@ div#conteneurRestaurants{
 // FIN VERSION MOBILE /////////
 
 // VERSION TABLETTE ///////////
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 1199px){
 
 	div#conteneurRestaurants{
 
@@ -234,6 +234,38 @@ div#conteneurRestaurants{
 	}
 }
 
-
-
 // FIN VERSION TABLETTE ///////
+
+// DEBUT VERSION DESKTOP //////
+
+div#conteneurReservation{
+
+	> button{
+		width: auto;
+	}
+}
+
+div#conteneurFonctionnement{
+
+	> div#listeActions{
+		flex-direction: row;
+		justify-content: space-between;
+
+		> div{
+			width: 30%;
+		}
+	}
+}
+
+div#conteneurRestaurants{
+
+	> div#listeRestaurants{
+		flex-direction: row;
+
+		> *{
+			width: 23%;
+		}
+	}
+}
+
+// FIN VERSION DESKTOP ////////

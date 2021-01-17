@@ -149,3 +149,23 @@ div.detailChoix{
 button.btn-primaire{
 	@include btnPrincipal;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+	header{
+
+	
+
+		> div{
+		
+		}
+
+		> h1{
+			
+			
+		}
+	}
+}
+
+@media screen and (min-width: 1200px){
+
+}

@@ -172,7 +172,7 @@ div#conteneurRestaurants {
             div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant > div.infoRestaurant > div:last-child > i.fas {
               color: #9356DC; }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   div#conteneurRestaurants > h2 {
     display: inline; }
   div#conteneurRestaurants > div#listeRestaurants {
@@ -203,5 +203,18 @@ div#conteneurRestaurants {
     right: inherit !important;
     margin-left: 210px;
     margin-top: 15px !important; } }
+div#conteneurReservation > button {
+  width: auto; }
+
+div#conteneurFonctionnement > div#listeActions {
+  flex-direction: row;
+  justify-content: space-between; }
+  div#conteneurFonctionnement > div#listeActions > div {
+    width: 30%; }
+
+div#conteneurRestaurants > div#listeRestaurants {
+  flex-direction: row; }
+  div#conteneurRestaurants > div#listeRestaurants > * {
+    width: 23%; }
 
 /*# sourceMappingURL=main.css.map */
