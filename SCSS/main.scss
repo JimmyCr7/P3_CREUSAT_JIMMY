@@ -237,33 +237,34 @@ div#conteneurRestaurants{
 // FIN VERSION TABLETTE ///////
 
 // DEBUT VERSION DESKTOP //////
+@media screen and (min-width: 1200px){
+	div#conteneurReservation{
 
-div#conteneurReservation{
-
-	> button{
-		width: auto;
-	}
-}
-
-div#conteneurFonctionnement{
-
-	> div#listeActions{
-		flex-direction: row;
-		justify-content: space-between;
-
-		> div{
-			width: 30%;
+		> button{
+			width: auto;
 		}
 	}
-}
 
-div#conteneurRestaurants{
+	div#conteneurFonctionnement{
 
-	> div#listeRestaurants{
-		flex-direction: row;
+		> div#listeActions{
+			flex-direction: row;
+			justify-content: space-between;
 
-		> *{
-			width: 23%;
+			> div{
+				width: 30%;
+			}
+		}
+	}
+
+	div#conteneurRestaurants{
+
+		> div#listeRestaurants{
+			flex-direction: row;
+
+			> *{
+				width: 23%;
+			}
 		}
 	}
 }
