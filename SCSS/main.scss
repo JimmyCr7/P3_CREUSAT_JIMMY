@@ -127,6 +127,7 @@ div#conteneurRestaurants{
 			> div.restaurant{
 				display: flex;
 				flex-direction: column;
+				position: relative;
 				-webkit-border-radius: 20px;
 				-moz-border-radius: 20px;
 				border-radius: 20px;
@@ -228,13 +229,6 @@ div#conteneurRestaurants{
 				width: 50%;
 			} 
 		}		
-	}
-
-	div.banniereNouveau{
-		top: inherit !important;
-		right: inherit !important;
-		margin-left: 210px;
-		margin-top: 15px !important;
 	}
 }
 

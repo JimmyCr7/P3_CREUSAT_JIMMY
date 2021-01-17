@@ -129,6 +129,7 @@ div#conteneurRestaurants {
       div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant {
         display: flex;
         flex-direction: column;
+        position: relative;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         border-radius: 20px;
@@ -147,15 +148,14 @@ div#conteneurRestaurants {
           display: inline-block;
           padding: 7px 15px;
           position: absolute;
-          text-align: right;
           background-color: #99E2D0;
           border: none;
           color: green;
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
           border-radius: 4px;
-          margin-top: 4%;
-          right: 28px; }
+          top: 20px;
+          right: 20px; }
         div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant > div.infoRestaurant {
           display: flex;
           flex-direction: row;
@@ -198,13 +198,7 @@ div#conteneurRestaurants {
     div#listeActions > div > button {
       display: block;
       margin-left: 30px;
-      width: 50%; }
-
-  div.banniereNouveau {
-    top: inherit !important;
-    right: inherit !important;
-    margin-left: 210px;
-    margin-top: 15px !important; } }
+      width: 50%; } }
 @media screen and (min-width: 1200px) {
   button.btn-primaire {
     width: auto !important; }
