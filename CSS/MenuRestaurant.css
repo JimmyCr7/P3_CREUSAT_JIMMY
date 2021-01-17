@@ -3,10 +3,9 @@ header {
   text-align: center;
   -webkit-box-shadow: 0px 1px 5px 0px black;
   -moz-box-shadow: 0px 1px 5px 0px black;
-  box-shadow: 0px 1px 5px 0px black; }
-  header h1 {
-    display: inline-block; }
-  header > div {
+  box-shadow: 0px 1px 5px 0px black;
+  padding: 1px 0px; }
+  header > div:first-child {
     display: none; }
 
 footer {
@@ -49,15 +48,15 @@ button:not(.btn-primary) {
   button:not(.btn-primary) > div > div:first-child {
     text-align: left; }
 
-header {
-  text-align: left; }
-  header > h1 {
-    margin-left: 25px; }
-  header > div {
-    display: inline-block;
-    margin: 0px 25px; }
-    header > div > a {
-      color: black; }
+header > div:first-child {
+  display: inline-block;
+  float: left;
+  margin: 25px 50px 25px 25px; }
+  header > div:first-child > a {
+    color: black; }
+header > h1 {
+  text-align: left;
+  padding: 0px; }
 
 hr {
   width: 10%;
@@ -149,5 +148,27 @@ button.btn-primaire {
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07); }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  button.btn-primaire {
+    width: auto !important; }
+
+  header > h1 {
+    text-align: center;
+    margin-right: 100px; } }
+@media screen and (min-width: 1200px) {
+  header > h1 {
+    text-align: center;
+    margin-right: 100px; }
+
+  div#listeMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    div#listeMenu > * {
+      width: 30%; }
+
+  button.btn-primaire {
+    width: auto; } }
 
 /*# sourceMappingURL=MenuRestaurant.css.map */

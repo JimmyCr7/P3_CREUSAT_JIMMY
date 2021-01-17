@@ -3,10 +3,9 @@ header {
   text-align: center;
   -webkit-box-shadow: 0px 1px 5px 0px black;
   -moz-box-shadow: 0px 1px 5px 0px black;
-  box-shadow: 0px 1px 5px 0px black; }
-  header h1 {
-    display: inline-block; }
-  header > div {
+  box-shadow: 0px 1px 5px 0px black;
+  padding: 1px 0px; }
+  header > div:first-child {
     display: none; }
 
 footer {
@@ -173,6 +172,9 @@ div#conteneurRestaurants {
               color: #9356DC; }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  button.btn-primaire {
+    width: auto !important; }
+
   div#conteneurRestaurants > h2 {
     display: inline; }
   div#conteneurRestaurants > div#listeRestaurants {
@@ -204,8 +206,8 @@ div#conteneurRestaurants {
     margin-left: 210px;
     margin-top: 15px !important; } }
 @media screen and (min-width: 1200px) {
-  div#conteneurReservation > button {
-    width: auto; }
+  button.btn-primaire {
+    width: auto !important; }
 
   div#conteneurFonctionnement > div#listeActions {
     flex-direction: row;

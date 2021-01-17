@@ -27,19 +27,20 @@ button:not(.btn-primary){
 
 //ENTETE
 header{
-	text-align: left;
 
-	> h1{
-		margin-left: 25px;
-	}
-
-	> div{
+	> div:first-child{
 		display: inline-block;
-		margin: 0px 25px;
-	
+		float: left;
+		margin: 25px 50px 25px 25px;
+
 		> a{
 			color: black;
 		}
+	}
+
+	> h1{
+		text-align: left;
+		padding: 0px;
 	}
 }
 
@@ -150,22 +151,46 @@ button.btn-primaire{
 	@include btnPrincipal;
 }
 
+// DEBUT VERSION TABLETTE
 @media screen and (min-width: 768px) and (max-width: 1199px){
+
+	button.btn-primaire{
+		width: auto !important;
+	}
+
 	header{
 
-	
-
-		> div{
-		
-		}
-
 		> h1{
-			
-			
+			text-align: center;
+			margin-right: 100px;
 		}
 	}
 }
+// FIN VERSION TABLETTE
 
+// DEBUT VERSION DESKTOP
 @media screen and (min-width: 1200px){
 
+	header{
+
+		> h1{
+			text-align: center;
+			margin-right: 100px;
+		}
+	}
+
+	div#listeMenu{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		> *{
+			width: 30%;
+		}	
+	}
+
+	button.btn-primaire{
+		width: auto;
+	}
 }
+// FIN VERSION DESKTOP

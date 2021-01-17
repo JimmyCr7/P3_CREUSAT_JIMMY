@@ -181,6 +181,10 @@ div#conteneurRestaurants{
 // VERSION TABLETTE ///////////
 @media screen and (min-width: 768px) and (max-width: 1199px){
 
+	button.btn-primaire{
+		width: auto !important;
+	}
+
 	div#conteneurRestaurants{
 
 		> h2{
@@ -238,11 +242,9 @@ div#conteneurRestaurants{
 
 // DEBUT VERSION DESKTOP //////
 @media screen and (min-width: 1200px){
-	div#conteneurReservation{
 
-		> button{
-			width: auto;
-		}
+	button.btn-primaire{
+		width: auto !important;
 	}
 
 	div#conteneurFonctionnement{
