@@ -3,6 +3,35 @@
 @import "Partials/piedDePage";
 
 ////////////////////////////////
+
+@keyframes slide{
+	from{
+		margin-left: -100%;
+		opacity: 0;
+	}
+
+	to{
+
+	}
+}
+
+@keyframes shakeBtn{
+
+	33%{
+		transform: rotate(3deg) scale(1.2);
+		
+	}
+
+	66%{
+		transform: rotate(-6deg) scale(1.2);
+	}
+
+	100%{
+		transform: scale(1);
+	}
+}
+
+////////////////////////////////
 p, a, span{
 	font-family: $police-texte;
 }
@@ -104,6 +133,10 @@ button:not(.btn-primaire){
 div.detailChoix{
 	@include detailChoix;
 
+	animation-name: slide;
+	animation-duration: 2s;
+	margin: 10px 0px 10px 0px;
+
 	> *{
 		margin: 0px 0px 0px 15px;
 	}
@@ -134,11 +167,12 @@ div.detailChoix{
 		flex: 1;
 		background-color: $couleur-tertiaire;
 		border-radius: 0px 20px 20px 0px;
-		padding: 18px 0px 0px 0px;
-		margin-left: 0px;
+		padding: 5px;
 
 		>i{
 			color: white;
+			margin-left: 30%;
+			margin-top: 15px;
 		}
 	}
 
@@ -149,6 +183,9 @@ div.detailChoix{
 
 button.btn-primaire{
 	@include btnPrincipal;
+	animation-name: shakeBtn;
+	animation-duration: 1500ms;
+	animation-iteration-count: infinite;
 }
 
 // DEBUT VERSION TABLETTE
