@@ -15,6 +15,112 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
+
+i.fa-heart{
+	-webkit-text-stroke: 2px black;
+	-webkit-text-fill-color: white;
+
+	-webkit-transition-duration: 2000ms;
+	-moz-transition-duration: 2000ms;
+	transition-duration: 2000ms;
+
+	-webkit-transition-property: background;
+	-moz-transition-property: background;
+	transition-property: background;
+
+	&:hover{
+		-webkit-text-stroke-width: 0px;
+		background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
+ 	 	-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}
+}
+// ANIMATION LOADING SPINNER///
+
+@keyframes turnAnim{
+	from{
+
+	}
+
+	to{
+		transform: rotate(1turn);
+	}
+}
+
+@keyframes sphereAnim{
+	50%{
+		opacity: 0.3;
+		transform: scale(0.5);
+	}
+
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes mainAnim{
+	0%{
+
+	}
+
+	90%{
+		opacity: 0.9;
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+div#boxMainAnim{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	opacity: 0.9;
+	background-color: black;
+
+	-webkit-animation: mainAnim 2000ms 1 forwards;
+	-moz-animation: mainAnim 2000ms 1 forwards;
+	animation: mainAnim 2000ms 1 forwards;
+
+	> div#boxTurnAnim{
+		position: absolute;
+		width: 200px;
+		height: 200px;
+
+		top: 50%;
+		left: 50%;
+		margin-top: -100px;
+		margin-left: -100px;
+
+		-webkit-animation: turnAnim 2000ms 1;
+		-moz-animation: turnAnim 2000ms 1;
+		animation: turnAnim 2000ms 1;
+	
+
+		> div{
+			width: 45px;
+			height: 45px;
+			background: linear-gradient(45deg, $couleur-primaire, $couleur-secondaire);
+			border-radius: 50%;
+
+			-webkit-animation: sphereAnim 2000ms 1;
+			-moz-animation: sphereAnim 2000ms 1;
+			animation: sphereAnim 2000ms 1;
+		}
+
+		> div:last-child{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+
 ///////////////////////////////
 
 // VERSION MOBILE /////////////
@@ -176,10 +282,6 @@ div#conteneurRestaurants{
 
 					> div:last-child{
 						flex: 1;
-
-						> i.fas{
-							color: $couleur-primaire;
-						}
 					}
 				}
 			}

@@ -133,12 +133,28 @@ button:not(.btn-primaire){
 div.detailChoix{
 	@include detailChoix;
 
+	display: flex;
+	flex-direction: row;
+
 	animation-name: slide;
 	animation-duration: 2s;
 	margin: 10px 0px 10px 0px;
 
+	-webkit-transition-property: flex;
+	-moz-transition-property: flex;
+	transition-property: flex;
+
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+
 	> *{
 		margin: 0px 0px 0px 15px;
+	}
+
+	&:hover > div.choixAccepte{
+		display: inline-block;
+		width: 75px;
 	}
 
 	span.prix{
@@ -148,8 +164,8 @@ div.detailChoix{
 	> div:first-child{
 		display: flex;
 		flex-direction: column;
-		flex: 5;
 		padding: 10px 0px;
+		flex: 7;
 
 		> div:first-child{
 			font-weight: bolder;
@@ -159,25 +175,23 @@ div.detailChoix{
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			margin: 0px 20px 0px 0px;
+			//margin: 0px 20px 0px 0px;
 		}
+
 	}
 
 	> div.choixAccepte{
-		flex: 1;
+		display: none;
 		background-color: $couleur-tertiaire;
 		border-radius: 0px 20px 20px 0px;
 		padding: 5px;
+		width: 0px;
 
-		>i{
+		> i{
 			color: white;
-			margin-left: 30%;
-			margin-top: 15px;
+			margin-top: 22%;
+			margin-left: 20px;
 		}
-	}
-
-	> div.choix{
-		display: none;
 	}
 } 
 
