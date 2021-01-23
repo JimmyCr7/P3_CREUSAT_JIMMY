@@ -131,8 +131,10 @@ div.detailChoix {
   div.detailChoix > * {
     margin: 0px 0px 0px 15px; }
   div.detailChoix:hover > div.choixAccepte {
-    display: inline-block;
-    width: 75px; }
+    transform: scaleX(1);
+    flex: 2; }
+    div.detailChoix:hover > div.choixAccepte > i {
+      display: inline-block; }
   div.detailChoix span.prix {
     font-weight: bolder; }
   div.detailChoix > div:first-child {
@@ -147,15 +149,27 @@ div.detailChoix {
       flex-direction: row;
       justify-content: space-between; }
   div.detailChoix > div.choixAccepte {
-    display: none;
     background-color: #99E2D0;
     border-radius: 0px 20px 20px 0px;
-    padding: 5px;
-    width: 0px; }
+    padding: 5px 5px 5px 0px;
+    width: 0px;
+    transform: scaleX(0);
+    -webkit-transition-property: flex, transform;
+    -moz-transition-property: flex, transform;
+    transition-property: flex, transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    display: flex; }
     div.detailChoix > div.choixAccepte > i {
+      font-size: 24px;
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
       color: white;
-      margin-top: 22%;
-      margin-left: 20px; }
+      margin-top: -12px;
+      margin-left: -12px; }
 
 button.btn-primaire {
   display: inline-block;
