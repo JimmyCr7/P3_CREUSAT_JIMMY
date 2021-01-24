@@ -38,11 +38,6 @@ body {
   margin: 0px;
   padding: 0px; }
 
-@keyframes fadeIcon {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 i.fa-heart {
   -webkit-text-stroke: 2px black;
   -webkit-text-fill-color: transparent;
@@ -60,6 +55,11 @@ i.fa-heart {
     -webkit-text-stroke: 0px;
     background: -webkit-linear-gradient(#9356DC, #FF79DA); }
 
+@keyframes fadeIcon {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @keyframes turnAnim {
   to {
     transform: rotate(1turn); } }
@@ -214,48 +214,49 @@ div#conteneurRestaurants {
     justify-content: space-between; }
     div#conteneurRestaurants > div#listeRestaurants > a {
       display: block; }
-      div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
-        -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        margin: 0px 15px 25px 15px; }
-        div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant img {
-          object-fit: cover;
-          width: 100%;
-          height: 150px;
-          -webkit-border-radius: 20px 20px 0px 0px;
-          -moz-border-radius: 20px 20px 0px 0px;
-          border-radius: 20px 20px 0px 0px; }
-        div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant > div.banniereNouveau {
-          display: inline-block;
-          padding: 7px 15px;
-          position: absolute;
-          background-color: #99E2D0;
-          border: none;
-          color: green;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
-          top: 20px;
-          right: 20px; }
-        div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant > div.infoRestaurant {
-          display: flex;
-          flex-direction: row;
-          align-items: center; }
-          div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant > div.infoRestaurant > div:first-child {
-            flex: 6; }
-            div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant > div.infoRestaurant > div:first-child * {
-              margin-left: 20px; }
-            div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant > div.infoRestaurant > div:first-child > p:last-child {
-              margin-top: -15px; }
-          div#conteneurRestaurants > div#listeRestaurants > a > div.restaurant > div.infoRestaurant > div:last-child {
-            flex: 1; }
+
+div.restaurant {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin: 0px 15px 25px 15px; }
+  div.restaurant img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    -webkit-border-radius: 20px 20px 0px 0px;
+    -moz-border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px; }
+  div.restaurant > div.banniereNouveau {
+    display: inline-block;
+    padding: 7px 15px;
+    position: absolute;
+    background-color: #99E2D0;
+    border: none;
+    color: green;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    top: 20px;
+    right: 20px; }
+  div.restaurant > div.infoRestaurant {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    div.restaurant > div.infoRestaurant > div:first-child {
+      flex: 6; }
+      div.restaurant > div.infoRestaurant > div:first-child * {
+        margin-left: 20px; }
+      div.restaurant > div.infoRestaurant > div:first-child > p:last-child {
+        margin-top: -15px; }
+    div.restaurant > div.infoRestaurant > div:last-child {
+      flex: 1; }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   button.btn-primaire {
