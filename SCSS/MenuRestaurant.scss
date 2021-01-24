@@ -31,6 +31,20 @@
 	}
 }
 
+////////////////////////////
+
+@keyframes fadeIcon{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+////////////////////////////
+
 ////////////////////////////////
 p, a, span{
 	font-family: $police-texte;
@@ -51,6 +65,10 @@ button:not(.btn-primary){
 	> div > div:first-child{
 		text-align: left;
 	}
+}
+
+i.fa-heart{
+	@include iconHeart;
 }
 ///////////////////////////////
 
@@ -133,21 +151,6 @@ button:not(.btn-primaire){
 div.detailChoix{
 	@include detailChoix;
 
-	display: flex;
-	flex-direction: row;
-
-	animation-name: slide;
-	animation-duration: 2s;
-	margin: 10px 0px 10px 0px;
-
-	-webkit-transition-property: flex;
-	-moz-transition-property: flex;
-	transition-property: flex;
-
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-
 	> *{
 		margin: 0px 0px 0px 15px;
 	}
@@ -183,47 +186,39 @@ div.detailChoix{
 		}
 
 	}
+}
 
-	> div.choixAccepte{
-		background-color: $couleur-tertiaire;
-		border-radius: 0px 20px 20px 0px;
-		padding: 5px 5px 5px 0px;
-		width: 0px;
-		transform: scaleX(0);
+div.choixAccepte{
+	background-color: $couleur-tertiaire;
+	border-radius: 0px 20px 20px 0px;
+	padding: 5px 5px 5px 0px;
+	width: 0px;
+	transform: scaleX(0);
 
-		-webkit-transition-property: flex, transform;
-		-moz-transition-property: flex, transform;
-		transition-property: flex, transform;
-		-webkit-transition-duration: 0.3s;
-		-moz-transition-duration: 0.3s;
-		transition-duration: 0.3s;
-
-		display: flex;
-
-		> i{
-			font-size: 24px;
-			display: none;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			color: white;
-			margin-top: -12px;
-			margin-left: -12px;
-		}
-	}
-} 
-
-button.btn-primaire{
-	@include btnPrincipal;
-	animation-name: shakeBtn;
-	animation-duration: 1500ms;
-	animation-iteration-count: infinite;
-	-webkit-transition-property: opacity;
-	-moz-transition-property: opacity;
-	transition-property: opacity;
+	-webkit-transition-property: flex, transform;
+	-moz-transition-property: flex, transform;
+	transition-property: flex, transform;
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
 	transition-duration: 0.3s;
+
+	display: flex;
+
+	> i{
+		font-size: 24px;
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: white;
+		margin-top: -12px;
+		margin-left: -12px;
+	}
+}
+
+button.btn-primaire{
+	@include btnPrincipal;
+	
 
 	&:hover{
 		opacity: 0.7;
@@ -232,6 +227,18 @@ button.btn-primaire{
 
 // DEBUT VERSION TABLETTE
 @media screen and (min-width: 768px) and (max-width: 1199px){
+
+	h2{
+		font-size: 1.7em;
+	}
+
+	h3{
+		font-size: 1.5em;
+	}
+
+	span{
+		font-size: 1.1em;
+	}
 
 	button.btn-primaire{
 		width: auto !important;
@@ -249,6 +256,18 @@ button.btn-primaire{
 
 // DEBUT VERSION DESKTOP
 @media screen and (min-width: 1200px){
+
+	h2{
+		font-size: 1.9em;
+	}
+
+	h3{
+		font-size: 1.7em;
+	}
+
+	span{
+		font-size: 1.3em;
+	}
 
 	header{
 
