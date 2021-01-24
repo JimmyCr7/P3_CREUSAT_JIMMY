@@ -176,7 +176,17 @@ div#conteneurFonctionnement{
 		flex-direction: column;
 		margin: 0px 25px;
 
+		i{
+			-webkit-transition-property: color;
+			-moz-transition-property: color;
+			transition-property: color;
+			-webkit-transition-duration: 0.3s;
+			-moz-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+		}
+
 		> div > button{
+			position: relative;
 			-webkit-border-radius: 20px;
 			-moz-border-radius: 20px;
 			border-radius: 20px;
@@ -196,6 +206,14 @@ div#conteneurFonctionnement{
 			-moz-transition-duration: 0.3s;
 			transition-duration: 0.3s;
 
+			&:hover > i{
+				color: $couleur-primaire;
+			}
+
+			&:hover{
+				background-color: rgba(147, 86, 220, 0.2) !important;
+			}
+
 			&:focus{
 				outline: none;
 			}
@@ -205,15 +223,19 @@ div#conteneurFonctionnement{
 			}
 
 			> span.numAction{
-				-webkit-border-radius: 100%;
-				-moz-border-radius: 100%;
-				border-radius: 100%;
+				position: absolute;
+				text-align: center;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				left: 0px;
 				color: white;
 				width: 15px;
 				height: 15px;
-				padding: 7px;
+				padding: 5px;
 				background-color: $couleur-primaire;
 				margin-left: -12px;
+				margin-top: -4px;
 			}
 		}
 	}

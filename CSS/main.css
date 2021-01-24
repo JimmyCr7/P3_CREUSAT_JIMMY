@@ -164,7 +164,15 @@ div#conteneurFonctionnement {
     display: flex;
     flex-direction: column;
     margin: 0px 25px; }
+    div#conteneurFonctionnement > div#listeActions i {
+      -webkit-transition-property: color;
+      -moz-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
     div#conteneurFonctionnement > div#listeActions > div > button {
+      position: relative;
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
       border-radius: 20px;
@@ -185,20 +193,28 @@ div#conteneurFonctionnement {
       -webkit-transition-duration: 0.3s;
       -moz-transition-duration: 0.3s;
       transition-duration: 0.3s; }
+      div#conteneurFonctionnement > div#listeActions > div > button:hover > i {
+        color: #9356DC; }
+      div#conteneurFonctionnement > div#listeActions > div > button:hover {
+        background-color: rgba(147, 86, 220, 0.2) !important; }
       div#conteneurFonctionnement > div#listeActions > div > button:focus {
         outline: none; }
       div#conteneurFonctionnement > div#listeActions > div > button > i {
         margin: 0px 35px; }
       div#conteneurFonctionnement > div#listeActions > div > button > span.numAction {
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        border-radius: 100%;
+        position: absolute;
+        text-align: center;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        left: 0px;
         color: white;
         width: 15px;
         height: 15px;
-        padding: 7px;
+        padding: 5px;
         background-color: #9356DC;
-        margin-left: -12px; }
+        margin-left: -12px;
+        margin-top: -4px; }
 
 div#conteneurRestaurants {
   background-color: #F8F8F8;
