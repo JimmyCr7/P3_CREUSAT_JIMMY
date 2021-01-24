@@ -275,6 +275,25 @@ div.restaurant {
       flex: 1; }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  h2 {
+    font-size: 1.7em; }
+
+  h3 {
+    font-size: 1.5em; }
+
+  span {
+    font-size: 1.1em; }
+
+  p {
+    font-size: 1.1em; }
+
+  button {
+    font-size: 1.1em; }
+    button > span {
+      width: 20px !important;
+      height: auto !important;
+      margin-left: -15px !important; }
+
   button.btn-primaire {
     width: auto !important; }
 
@@ -303,12 +322,28 @@ div.restaurant {
       margin-left: 30px;
       width: 50%; } }
 @media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 1.9em; }
+
+  h3 {
+    font-size: 1.7em; }
+
+  p {
+    font-size: 1.3em; }
+
+  button {
+    font-size: 1.3em; }
+    button > span {
+      width: 25px !important;
+      height: auto !important;
+      margin-left: -17px !important; }
+
   button.btn-primaire {
     width: auto !important; }
 
   div#conteneurFonctionnement > div#listeActions {
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-around; }
     div#conteneurFonctionnement > div#listeActions > div {
       width: 30%; }
 
